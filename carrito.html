@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Holanda</title>
+    <link rel="stylesheet" href="carrito.css">
+
+</head>
+<body>
+
+<!-- Botón para subir -->
+<a href="#top" class="btn-arriba">↑</a>
+
+<!-- HEADER -->
+<header id="top">
+    <div class="header-left">
+        <a href="index.html"><img src="logo.jpg" alt="Logo" class="logo-img"></a>
+    </div>
+
+    <div class="hamburger" id="hamburger">☰</div>
+
+    <nav class="menu-centro" id="menu-centro">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li class="submenu-container">
+                <a href="catalogo.html">Catálogo</a>
+                <ul class="submenu-items">
+                    <li><a href="#mordizko">Mordizko</a></li>
+                    <li><a href="#magnum">Magnum</a></li>
+                    <li><a href="#cornetto">Cornetto</a></li>
+                    <li><a href="#kids">Kids</a></li>
+                    <li><a href="#viennetta">Viennetta</a></li>
+                    <li><a href="#clasicos">Clásicos</a></li>
+                    <li><a href="#solero">Solero</a></li>
+                    <li><a href="#origen">Dulce Origen</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html#marcas-section">Marcas</a></li>
+            <li><a class="active" href="sobre-nosotros.html">Sobre Nosotros</a></li>
+            <li><a class="active" href="carrito.html">Hacer un Pedido</a></li>
+        </ul>
+    </nav>
+
+    <div class="header-right">
+        <input type="text" class="buscador" placeholder="Buscar...">
+    </div>
+
+
+</header>
+
+
+<!-- ======================================================== -->
+<!-- ===================== MORDISKO ========================== -->
+<!-- ======================================================== -->
+
+<section id="mordizko" class="marca-section">
+    <div class="marca-header">
+        <img src="https://enece.mx/assets/img2/clients/mordisko.png" width="60">
+    </div>
+
+    <div class="productos-grid-marca">
+
+        <!-- PRODUCTO -->
+        <div class="producto-card">
+            <div class="img-container">
+                <button class="btn-menos" onclick="restar('m1')">-</button>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlMuiEWHx2JLe12KIaAA5ViKRtlOjKY3eZHA&s">
+                <button class="btn-mas" onclick="sumar('m1')">+</button>
+            </div>
+            <span id="m1" class="cantidad">0</span>
+
+            <h3>Mordisko Clásico</h3>
+            <p>Crujiente galleta rellena de helado cremoso y cubierta de chocolate.</p>
+            <span class="precio">$28.00</span>
+        </div>
+
+        <div class="producto-card">
+            <div class="img-container">
+                <button class="btn-menos" onclick="restar('m2')">-</button>
+                <img src="https://i5-mx.walmartimages.com/gr/images/product-images/img_large/00750630641586L.jpg?odnHeight=612&odnWidth=612&odnBg=FFFFFF">
+                <button class="btn-mas" onclick="sumar('m2')">+</button>
+            </div>
+            <span id="m2" class="cantidad">0</span>
+
+            <h3>Mordisko Fresa</h3>
+            <p>Helado de vainilla con doble baño de chocolate y trozos crujientes.</p>
+            <span class="precio">$28.00</span>
+        </div>
+
+        <div class="producto-card">
+            <div class="img-container">
+                <button class="btn-menos" onclick="restar('m3')">-</button>
+                <img src="https://i5-mx.walmartimages.com/gr/images/product-images/img_large/00750630641595L.jpg">
+                <button class="btn-mas" onclick="sumar('m3')">+</button>
+            </div>
+            <span id="m3" class="cantidad">0</span>
+
+            <h3>Mordisko Chocolate</h3>
+            <p>Galleta más gruesa con extra crunch y cobertura de chocolate intenso.</p>
+            <span class="precio">$30.00</span>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ======================================================== -->
+<!-- ======================= MAGNUM ========================== -->
+<!-- ======================================================== -->
+
+<section id="magnum" class="marca-section">
+    <div class="marca-header">
+        <img src="https://assets.unileversolutions.com/v1/104493552.png" width="60">
+    </div>
+
+    <div class="productos-grid-marca">
+
+        <div class="producto-card">
+            <div class="img-container">
+                <button class="btn-menos" onclick="restar('mg1')">-</button>
+                <img src="https://i5.walmartimages.com.mx/gr/images/product-images/img_large/00750630641579L.jpg">
+                <button class="btn-mas" onclick="sumar('mg1')">+</button>
+            </div>
+            <span id="mg1" class="cantidad">0</span>
+
+            <h3>Magnum Classic</h3>
+            <p>Helado cremoso cubierto con chocolate belga de alta calidad.</p>
+            <span class="precio">$35.00</span>
+        </div>
+
+        <div class="producto-card">
+            <div class="img-container">
+                <button class="btn-menos" onclick="restar('mg2')">-</button>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTso46En94XG4DO3LW6NK_gyDC04Jy8tABuSg&s">
+                <button class="btn-mas" onclick="sumar('mg2')">+</button>
+            </div>
+            <span id="mg2" class="cantidad">0</span>
+
+            <h3>Magnum Almond</h3>
+            <p>Helado suave cubierto de chocolate con almendras tostadas.</p>
+            <span class="precio">$38.00</span>
+        </div>
+
+        <div class="producto-card">
+            <div class="img-container">
+                <button class="btn-menos" onclick="restar('mg3')">-</button>
+                <img src="https://assets.unileversolutions.com/v1/101234908.png">
+                <button class="btn-mas" onclick="sumar('mg3')">+</button>
+            </div>
+            <span id="mg3" class="cantidad">0</span>
+
+            <h3>Magnum White</h3>
+            <p>Helado de vainilla envuelto en una dulce y fina capa de chocolate blanco.</p>
+            <span class="precio">$38.00</span>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ======================================================== -->
+<!-- ===================== CORNETTO ========================== -->
+<!-- ======================================================== -->
+
+<section id="cornetto" class="marca-section">
+    <div class="marca-header">
+        <img src="https://www.brandemia.org/wp-content/uploads/2013/04/logo_cornetto_nuevo.jpg" width="60">
+    </div>
+    <div class="productos-grid-marca">
+
+
+        <div class="producto-card">
+            <div class="img-container">
+                <button class="btn-menos" onclick="restar('c1')">-</button>
+                <img src="https://i5-mx.walmartimages.com/gr/images/product-images/img_large/00750630640027L.jpg?odnHeight=612&odnWidth=612&odnBg=FFFFFF">
+                <button class="btn-mas" onclick="sumar('c1')">+</button>
+            </div>
+            <span id="c1" class="cantidad">0</span>
+
+            <h3>Cornetto Fresa</h3>
+            <p>Cono crujiente con helado de fresa y un toque de jalea frutal.</p>
+            <span class="precio">$25.00</span>
+        </div>
+
+        <div class="producto-card">
+            <div class="img-container">
+                <button class="btn-menos" onclick="restar('c2')">-</button>
+                <img src="https://i5.walmartimages.com.mx/gr/images/product-images/img_large/00750630641641L1.jpg?odnHeight=612&odnWidth=612&odnBg=FFFFFF">
+                <button class="btn-mas" onclick="sumar('c2')">+</button>
+            </div>
+            <span id="c2" class="cantidad">0</span>
+
+            <h3>Cornetto Chocolate</h3>
+            <p>Helado de chocolate cremoso con punta de cacao y cono tostado.</p>
+            <span class="precio">$25.00</span>
+        </div>
+
+        <div class="producto-card">
+            <div class="img-container">
+                <button class="btn-menos" onclick="restar('c3')">-</button>
+                <img src="https://mage.teloencargo.com.mx/media/catalog/product/cache/f43110fb6790afcc0a5cd8ebcf4b3ab4/6/4/64860229_-_cornetto_cono_vainilla.png">
+                <button class="btn-mas" onclick="sumar('c3')">+</button>
+            </div>
+            <span id="c3" class="cantidad">0</span>
+
+            <h3>Cornetto Vainilla</h3>
+            <p>Helado suave de vainilla con topping dulce y cono dorado.</p>
+            <span class="precio">$25.00</span>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ======================================================== -->
+<!-- ======================== KIDS =========================== -->
+<!-- ======================================================== -->
+
+<section id="kids" class="marca-section">
+    <div class="marca-header">
+        <img src="file:///C:/Users/alvar/Desktop/trabajo%20de%20titulacion%20CECYTEM%20-%20copia/kidz.jpg" width="60">
+    </div>
+
+    <div class="productos-grid-marca">
+
+        <div class="producto-card">
+            <div class="img-container">
+                <button class="btn-menos" onclick="restar('k1')">-</button>
+                <img src="https://i5.walmartimages.com.mx/gr/images/product-images/img_large/00750630641820L.jpg">
+                <button class="btn-mas" onclick="sumar('k1')">+</button>
+            </div>
+            <span id="k1" class="cantidad">0</span>
+
+            <h3>Mini Milk</h3>
+            <p>Helado divertido con mezcla de sabores a vainilla y textura suave.</p>
+            <span class="precio">$18.00</span>
+        </div>
+
+        <div class="producto-card">
+            <div class="img-container">
+                <button class="btn-menos" onclick="restar('k2')">-</button>
+                <img src="https://mage.teloencargo.com.mx/media/catalog/product/cache/28b16280b75ae743906a5d38e511cd49/h/e/hero_mini_milk_chocolate_new.png">
+                <button class="btn-mas" onclick="sumar('k2')">+</button>
+            </div>
+            <span id="k2" class="cantidad">0</span>
+
+            <h3>Mini Milk chocolate</h3>
+            <p>Refrescante paleta con sabor intenso a chocolate.</p>
+            <span class="precio">$15.00</span>
+        </div>
+
+        <div class="producto-card">
+            <div class="img-container">
+                <button class="btn-menos" onclick="restar('k3')">-</button>
+                <img src="https://images.rappi.com.mx/products/977336139-1585583828748.png">
+                <button class="btn-mas" onclick="sumar('k3')">+</button>
+            </div>
+            <span id="k3" class="cantidad">0</span>
+
+            <h3>Kolorix</h3>
+            <p>Heladito cremoso con auténtico sabor a fresa, ideal para niños.</p>
+            <span class="precio">$15.00</span>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ======================================================== -->
+<!-- ===================== VIENNETTA ========================= -->
+<!-- ======================================================== -->
+
+<section id="vienneta" class="marca-section">
+    <div class="marca-header">
+        <img src="https://mage.teloencargo.com.mx/media/amasty/shopby/option_images/LOGO_VIENNETTA.png" width="60">
+    </div>
+
+    <div class="productos-grid-marca">
+
+        <div class="producto-card">
+            <div class="img-container">
+                <button class="btn-menos" onclick="restar('v1')">-</button>
+                <img src="https://hebmx.vtexassets.com/arquivos/ids/837892-800-800?v=638498538846400000&width=800&height=800&aspect=true">
+                <button class="btn-mas" onclick="sumar('v1')">+</button>
+            </div>
+            <span id="v1" class="cantidad">0</span>
+
+            <h3>Viennetta Vainilla</h3>
+            <p>Postre helado en capas crujientes con suave sabor a vainilla.</p>
+            <span class="precio">$120.00</span>
+        </div>
+
+        <div class="producto-card">
+            <div class="img-container">
+                <button class="btn-menos" onclick="restar('v2')">-</button>
+                <img src="https://chedrauimx.vtexassets.com/arquivos/ids/57570676/8711327625730_00.jpg?v=638978025854570000">
+                <button class="btn-mas" onclick="sumar('v2')">+</button>
+            </div>
+            <span id="v2" class="cantidad">0</span>
+
+            <h3>Viennetta Chocolate</h3>
+            <p>Capas de crema helada mezcladas con láminas de chocolate crujiente.</p>
+            <span class="precio">$120.00</span>
+        </div>
+
+        <div class="producto-card">
+            <div class="img-container">
+                <button class="btn-menos" onclick="restar('v3')">-</button>
+                <img src="https://images.ctfassets.net/uu4q7lk7kqth/1BCl5kNF6vYYAuiXkuRWop/e3daf8de0700c2e63bcda2e9fecdcb08/SKU_82013_1.jpg">
+                <button class="btn-mas" onclick="sumar('v3')">+</button>
+            </div>
+            <span id="v3" class="cantidad">0</span>
+
+            <h3>Viennetta Cappuccino</h3>
+            <p>La combinación perfecta de chocolate crujiente y helado de vainilla.</p>
+            <span class="precio">$120.00</span>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ======================================================== -->
+<!-- ====================== CLÁSICOS ========================= -->
+<!-- ======================================================== -->
+
+<section id="clasicos" class="marca-section">
+    <div class="marca-header">
+        <img src="file:///C:/Users/alvar/Desktop/trabajo%20de%20titulacion%20CECYTEM%20-%20copia/clasicss.jpg" width="60">
+    </div>
+
+    <div class="productos-grid-marca">
+
+        <div class="producto-card">
+            <div class="img-container">
+                <button class="btn-menos" onclick="restar('cl1')">-</button>
+                <img src="https://i5.walmartimages.com.mx/gr/images/product-images/img_large/00750113093551L.jpg?odnHeight=612&odnWidth=612&odnBg=FFFFFF">
+                <button class="btn-mas" onclick="sumar('cl1')">+</button>
+            </div>
+            <span id="cl1" class="cantidad">0</span>
+
+            <h3>Paleta Limón</h3>
+            <p>Paleta helada de limón, refrescante y perfecta para el calor.</p>
+            <span class="precio">$20.00</span>
+        </div>
+
+        <div class="producto-card">
+            <div class="img-container">
+                <button class="btn-menos" onclick="restar('cl2')">-</button>
+                <img src="https://i5.walmartimages.com.mx/gr/images/product-images/img_large/00750113090041L.jpg">
+                <button class="btn-mas" onclick="sumar('cl2')">+</button>
+            </div>
+            <span id="cl2" class="cantidad">0</span>
+
+            <h3>Chemisse coco y piña</h3>
+            <p>Delicioso sabor a coco con piña con un toque dulce y refrescante.</p>
+            <span class="precio">$20.00</span>
+        </div>
+
+        <div class="producto-card">
+            <div class="img-container">
+                <button class="btn-menos" onclick="restar('cl3')">-</button>
+                <img src="https://i5-mx.walmartimages.com/gr/images/product-images/img_large/00750630641494L.jpg?odnHeight=612&odnWidth=612&odnBg=FFFFFF">
+                <button class="btn-mas" onclick="sumar('cl3')">+</button>
+            </div>
+            <span id="cl3" class="cantidad">0</span>
+
+            <h3>Paleta Mango</h3>
+            <p>Helado con sabor intenso a mango natural.</p>
+            <span class="precio">$20.00</span>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ======================================================== -->
+<!-- ======================== SOLERO ========================= -->
+<!-- ======================================================== -->
+
+<section id="solero" class="marca-section">
+    <div class="marca-header">
+        <img src="file:///C:/Users/alvar/Desktop/trabajo%20de%20titulacion%20CECYTEM%20-%20copia/soleross.jpg" width="60">
+    </div>
+
+    <div class="productos-grid-marca">
+
+        <div class="producto-card">
+            <div class="img-container">
+                <button class="btn-menos" onclick="restar('s1')">-</button>
+                <img src="https://i5-mx.walmartimages.com/gr/images/product-images/img_large/00750630641305L.jpg">
+                <button class="btn-mas" onclick="sumar('s1')">+</button>
+            </div>
+            <span id="s1" class="cantidad">0</span>
+
+            <h3>Solero Frutas Rojas</h3>
+            <p>Helado ligero elaborado con jugo natural de frutos rojos.</p>
+            <span class="precio">$22.00</span>
+        </div>
+
+        <div class="producto-card">
+            <div class="img-container">
+                <button class="btn-menos" onclick="restar('s2')">-</button>
+                <img src="https://www.fpsf.mx/cdn/shop/products/201906171608_Kk93_s_1024x1024.jpg?v=1588264505">
+                <button class="btn-mas" onclick="sumar('s2')">+</button>
+            </div>
+            <span id="s2" class="cantidad">0</span>
+
+            <h3>Solero Fresas</h3>
+            <p>Sabor tropical a fresa con textura suave y refrescante.</p>
+            <span class="precio">$22.00</span>
+        </div>
+
+        <div class="producto-card">
+            <div class="img-container">
+                <button class="btn-menos" onclick="restar('s3')">-</button>
+                <img src="https://i5-mx.walmartimages.com/gr/images/product-images/img_large/00750630621818L4.jpg?odnHeight=612&odnWidth=612&odnBg=FFFFFF">
+                <button class="btn-mas" onclick="sumar('s3')">+</button>
+            </div>
+            <span id="s3" class="cantidad">0</span>
+
+            <h3>Solero Limon Chamoy</h3>
+            <p>Combinación acida pero con toques dulces.</p>
+            <span class="precio">$22.00</span>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ======================================================== -->
+<!-- ====================== DULCE ORIGEN ===================== -->
+<!-- ======================================================== -->
+
+<section id="origen" class="marca-section">
+    <div class="marca-header">
+        <img src="file:///C:/Users/alvar/Desktop/trabajo%20de%20titulacion%20CECYTEM%20-%20copia/origen.jpg" width="60">
+    </div>
+
+    <div class="productos-grid-marca">
+
+        <div class="producto-card">
+            <div class="img-container">
+                <button class="btn-menos" onclick="restar('o1')">-</button>
+                <img src="https://i5-mx.walmartimages.com/gr/images/product-images/img_large/00750630641681L.jpg?odnHeight=612&odnWidth=612&odnBg=FFFFFF">
+                <button class="btn-mas" onclick="sumar('o1')">+</button>
+            </div>
+            <span id="o1" class="cantidad">0</span>
+
+            <h3>Dulce Origen Vainilla</h3>
+            <p>Helado artesanal de vainilla con ingredientes seleccionados.</p>
+            <span class="precio">$40.00</span>
+        </div>
+
+        <div class="producto-card">
+            <div class="img-container">
+                <button class="btn-menos" onclick="restar('o2')">-</button>
+                <img src="https://i5.walmartimages.com.mx/gr/images/product-images/img_large/00750630641672L.jpg">
+                <button class="btn-mas" onclick="sumar('o2')">+</button>
+            </div>
+            <span id="o2" class="cantidad">0</span>
+
+            <h3>Dulce Origen Chocolate</h3>
+            <p>Sabor profundo a cacao natural en un helado cremoso.</p>
+            <span class="precio">$40.00</span>
+        </div>
+
+        <div class="producto-card">
+            <div class="img-container">
+                <button class="btn-menos" onclick="restar('o3')">-</button>
+                <img src="https://i5.walmartimages.com.mx/gr/images/product-images/img_large/00750630641674L.jpg">
+                <button class="btn-mas" onclick="sumar('o3')">+</button>
+            </div>
+            <span id="o3" class="cantidad">0</span>
+
+            <h3>Dulce Origen Cafe</h3>
+            <p>Helado cremoso con trozos de nuez caramelizada.</p>
+            <span class="precio">$40.00</span>
+        </div>
+
+    </div>
+</section>
+
+<!-- ========== CARRITO FLOTANTE ========== -->
+<div id="carrito-flotante">
+
+    <!-- Botón para abrir -->
+    <button id="btn-open-carrito">🛒</button>
+
+    <!-- Ventana del carrito -->
+    <div id="carrito-ventana">
+        <h3>Carrito de Compras</h3>
+
+        <div id="lista-carrito">
+            <!-- Aquí tus productos se irán agregando -->
+        </div>
+
+        <div class="total-carrito">
+            Total: <span id="carrito-total">$0.00</span>
+        </div>
+
+        <button id="btn-cerrar-carrito" class="cerrar">Cerrar</button>
+<button class="checkout">Comprar</button>
+
+
+
+    </div>
+
+
+</div>
+<!-- Modal de compra -->
+<div class="purchase-modal">
+  <div class="modal-content">
+    <h2>Pedido directo a tu casa</h2>
+    <p>Muchas gracias por preferir nuestos productos, que lo disfrutes!</p>
+
+
+    <button class="close-modal">Cerrar</button>
+
+  </div>
+</div>
+
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-grid">
+        <div>
+            <h4>Información Legal</h4>
+            <p><a href="#" class="footer-link">Aviso de privacidad</a></p>
+            <p><a href="#" class="footer-link">Términos y Condiciones</a></p>
+        </div>
+
+        <div>
+            <h4>Ayuda</h4>
+            <p><a href="#" class="footer-link">Preguntas frecuentes</a></p>
+        </div>
+
+        <div>
+            <h4>Redes</h4>
+            <p>
+                <a href="#" class="footer-link">Facebook</a> •
+                <a href="#" class="footer-link">Instagram</a> •
+                <a href="#" class="footer-link">X</a>
+            </p>
+        </div>
+    </div>
+
+    <p class="footer-copy">© 2025 The Magnum Ice Cream Company. Derechos reservados.</p>
+</footer>
+
+<!-- SCRIPT -->
+<script>
+
+function agregarCarrito(id) {
+    let datos = new FormData();
+    datos.append("id", id);
+
+    fetch("agregar_carrito.php", {
+        method: "POST",
+        body: datos
+    })
+    .then(r => r.text())
+    .then(d => {
+        console.log("Producto agregado");
+    });
+}
+
+    function sumar(id) {
+        let elem = document.getElementById(id);
+        elem.textContent = parseInt(elem.textContent) + 1;
+    }
+
+    function restar(id) {
+        let elem = document.getElementById(id);
+        let cant = parseInt(elem.textContent);
+        if (cant > 0) elem.textContent = cant - 1;
+    }
+
+    const hamburger = document.getElementById("hamburger");
+    const menu = document.getElementById("menu-centro");
+
+    hamburger.addEventListener("click", () => {
+        menu.classList.toggle("menu-activo");
+    });
+
+const btnAbrir = document.getElementById("btn-open-carrito");
+const btnCerrar = document.getElementById("btn-cerrar-carrito");
+const ventana = document.getElementById("carrito-ventana");
+
+btnAbrir.onclick = () => {
+    ventana.style.display = "block";
+};
+
+btnCerrar.onclick = () => {
+    ventana.style.display = "none";
+};
+
+let carrito = {};
+
+function sumar(id) {
+    let elem = document.getElementById(id);
+    elem.textContent = parseInt(elem.textContent) + 1;
+    actualizarCarrito(id);
+}
+
+function restar(id) {
+    let elem = document.getElementById(id);
+    let cant = parseInt(elem.textContent);
+
+    if (cant > 0) {
+        elem.textContent = cant - 1;
+        actualizarCarrito(id);
+    }
+}
+
+function actualizarCarrito(id) {
+
+    let card = document.getElementById(id).closest(".producto-card");
+
+    let nombre = card.querySelector("h3").textContent;
+    let precio = parseFloat(card.querySelector(".precio").textContent.replace("$", ""));
+    let cantidad = parseInt(document.getElementById(id).textContent);
+
+    if (cantidad > 0) {
+        carrito[id] = { nombre, precio, cantidad };
+    } else {
+        delete carrito[id];
+    }
+
+    renderCarrito();
+}
+
+function renderCarrito() {
+
+    let cont = document.getElementById("lista-carrito");
+    cont.innerHTML = "";
+
+    let total = 0;
+
+    Object.keys(carrito).forEach(id => {
+
+        let item = carrito[id];
+        let subtotal = item.precio * item.cantidad;
+        total += subtotal;
+
+        cont.innerHTML += `
+            <div class="item-carrito">
+                <span>${item.nombre}</span>
+                <span>${item.cantidad} x $${item.precio.toFixed(2)}</span>
+                <span>$${subtotal.toFixed(2)}</span>
+            </div>
+        `;
+    });
+
+    document.getElementById("carrito-total").textContent =
+        "$" + total.toFixed(2);
+}
+
+ const checkoutBtn = document.querySelector(".checkout");
+  const modal = document.querySelector(".purchase-modal");
+  const closeModal = document.querySelector(".close-modal");
+  const continueBtn = document.querySelector(".continue-btn");
+
+  checkoutBtn.addEventListener("click", () => {
+    modal.style.display = "flex";
+  });
+
+  closeModal.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+
+  // cerrar con clic fuera del modal
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+
+
+
+</script>
+
+</body>
+</html>
