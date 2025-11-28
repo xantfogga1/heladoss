@@ -217,7 +217,7 @@
 
 <section id="kids" class="marca-section">
     <div class="marca-header">
-       <img src="kidz.jpg" width="60">
+        <img src="kidz.jpg" width="60">
     </div>
 
     <div class="productos-grid-marca">
@@ -325,7 +325,7 @@
 
 <section id="clasicos" class="marca-section">
     <div class="marca-header">
-        <img src="clasicss.jpg" width="60">
+        <img src="file:///C:/Users/alvar/Desktop/trabajo%20de%20titulacion%20CECYTEM%20-%20copia/clasicss.jpg" width="60">
     </div>
 
     <div class="productos-grid-marca">
@@ -379,7 +379,7 @@
 
 <section id="solero" class="marca-section">
     <div class="marca-header">
-        <img src="soleross.jpg" width="60">
+        <img src="file:///C:/Users/alvar/Desktop/trabajo%20de%20titulacion%20CECYTEM%20-%20copia/soleross.jpg" width="60">
     </div>
 
     <div class="productos-grid-marca">
@@ -433,7 +433,7 @@
 
 <section id="origen" class="marca-section">
     <div class="marca-header">
-        <img src="origen.jpg" width="60">
+        <img src="file:///C:/Users/alvar/Desktop/trabajo%20de%20titulacion%20CECYTEM%20-%20copia/origen.jpg" width="60">
     </div>
 
     <div class="productos-grid-marca">
@@ -499,6 +499,8 @@
         </div>
 
         <button id="btn-cerrar-carrito" class="cerrar">Cerrar</button>
+<button id="btn-vaciar-carrito" class="vaciar">Vaciar carrito</button>
+
 <button class="checkout">Comprar</button>
 
 
@@ -520,32 +522,37 @@
 </div>
 
 
-<!-- FOOTER -->
-<footer>
-    <div class="footer-grid">
-        <div>
-            <h4>Información Legal</h4>
-            <p><a href="#" class="footer-link">Aviso de privacidad</a></p>
-            <p><a href="#" class="footer-link">Términos y Condiciones</a></p>
+ <!-- FOOTER ACTUALIZADO -->
+    <footer>
+        <div class="footer-grid">
+
+            <div>
+                <h4>Información Legal</h4>
+                <p><a href="https://corporate.magnumicecream.com/en/notices/privacy/mexico-spanish.html" target="_blank" class="footer-link">Aviso de privacidad</a></p>
+            
+                <p><a href="https://corporate.magnumicecream.com/en/notices/legal/mexico-spanish.html" target="_blank" class="footer-link">Terminos y Condiciones</a></p>
+            
+
+</div>
+
+            <div>
+                <h4>Ayuda</h4>
+                <p><a href="https://www.heladosholanda.com.mx/faq.html" target="_blank" class="footer-link">Preguntas frecuentes</a></p>
+            </div>
+
+            <div>
+                <h4>Redes</h4>
+                <p>
+                    <a href="https://www.facebook.com/HeladosHolanda" target="_blank" class="footer-link">Facebook</a> • 
+                    <a href="https://www.instagram.com/heladosholandamx" target="_blank" class="footer-link">Instagram</a> • 
+                    <a href="https://x.com/helados_holanda" target="_blank" class="footer-link">X</a>
+                </p>
+            </div>
+
         </div>
 
-        <div>
-            <h4>Ayuda</h4>
-            <p><a href="#" class="footer-link">Preguntas frecuentes</a></p>
-        </div>
-
-        <div>
-            <h4>Redes</h4>
-            <p>
-                <a href="#" class="footer-link">Facebook</a> •
-                <a href="#" class="footer-link">Instagram</a> •
-                <a href="#" class="footer-link">X</a>
-            </p>
-        </div>
-    </div>
-
-    <p class="footer-copy">© 2025 The Magnum Ice Cream Company. Derechos reservados.</p>
-</footer>
+        <p class="footer-copy">© 2025 The Magnum Ice Cream Company. Derechos reservados.</p>
+    </footer>
 
 <!-- SCRIPT -->
 <script>
@@ -675,6 +682,14 @@ function renderCarrito() {
       modal.style.display = "none";
     }
   });
+const btnVaciar = document.getElementById("btn-vaciar-carrito");
+
+btnVaciar.onclick = () => {
+    carrito = {};  // limpiar objeto
+    document.querySelectorAll(".cantidad").forEach(c => c.textContent = "0"); // reset contadores
+    renderCarrito(); // actualizar vista
+};
+
 
 
 
@@ -682,5 +697,3 @@ function renderCarrito() {
 
 </body>
 </html>
-
-
